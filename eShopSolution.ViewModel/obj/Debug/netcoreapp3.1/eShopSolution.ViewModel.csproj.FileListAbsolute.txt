@@ -1,0 +1,5 @@
+C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.ViewModel\bin\Debug\netcoreapp3.1\eShopSolution.ViewModel.deps.json
+C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.ViewModel\bin\Debug\netcoreapp3.1\eShopSolution.ViewModel.dll
+C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.ViewModel\obj\Debug\netcoreapp3.1\eShopSolution.ViewModel.csprojAssemblyReference.cache
+C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.ViewModel\obj\Debug\netcoreapp3.1\eShopSolution.ViewModel.AssemblyInfoInputs.cache
+C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.ViewModel\obj\Debug\netcoreapp3.1\eShopSolution.ViewModel.AssemblyInfo.cs
