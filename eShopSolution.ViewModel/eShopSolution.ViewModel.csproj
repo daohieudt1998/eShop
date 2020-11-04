@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="3.1.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Catalog\Products\Manage\" />
+    <Folder Include="Catalog\Products\Public\" />
+  </ItemGroup>
+
 </Project>

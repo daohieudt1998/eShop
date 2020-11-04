@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using eShopSolution.ViewModel.Catalog.Products.Manage;
 using eShopSolution.ViewModel.Common;
 using eShopSolution.ViewModel.Catalog.Products;
 using Microsoft.AspNetCore.Http;
@@ -97,7 +96,8 @@ namespace eShopSolution.Application.Catalog.Products
                 };
             }
             _context.Products.Add(product);
-            return await _context.SaveChangesAsync();
+            int result = await _context.SaveChangesAsync();
+            return product.Id;
         }
 
         public async Task<int> Delete(int productId)
@@ -116,7 +116,7 @@ namespace eShopSolution.Application.Catalog.Products
             return await _context.SaveChangesAsync();
         }
 
-        public async Task<PageResult<ProductViewModel>> GetAllPaging(GetProductPagingRequest request)
+        public async Task<PageResult<ProductViewModel>> GetAllPaging(GetManageProductPagingRequest request)
         {
             //1.select Join
             var query = from p in _context.Products
@@ -165,6 +165,32 @@ namespace eShopSolution.Application.Catalog.Products
             };
 
             return pagedResult;
+        }
+
+        public async Task<ProductViewModel> GetById(int id, string languageId)
+        {
+            var query = await (from p in _context.Products
+                        join pt in _context.ProductTranslations on p.Id equals pt.ProductId
+                        join pic in _context.ProductInCategories on p.Id equals pic.ProductId
+                        join c in _context.Categories on pic.CategoryId equals c.Id
+                        where p.Id == id && pt.LanguageId == languageId
+                        select new ProductViewModel()
+                        {
+                            Id = p.Id,
+                            Name = pt.Name,
+                            DateCreated = p.DateCreated,
+                            Description = pt.Description,
+                            Details = pt.Details,
+                            LanguageId = pt.LanguageId,
+                            OriginalPrice = p.OriginalPrice,
+                            Price = p.Price,
+                            SeoAlias = pt.SeoAlias,
+                            SeoDescription = pt.SeoDescription,
+                            SeoTitle = pt.SeoTitle,
+                            Stock = p.Stock,
+                            ViewCount = p.ViewCount,
+                        }).FirstOrDefaultAsync();
+            return query;
         }
 
         public async Task<List<ProductImageViewModel>> GetListImage(int productId)

@@ -12,3 +12,5 @@ C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.Application\bin\Debug\net
 C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.Application\obj\Debug\netcoreapp3.1\eShopSolution.Application.csproj.CopyComplete
 C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.Application\bin\Debug\netcoreapp3.1\eShopSolution.Utilities.dll
 C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.Application\bin\Debug\netcoreapp3.1\eShopSolution.ViewModel.dll
+C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.Application\bin\Debug\netcoreapp3.1\eShopSolution.Utilities.pdb
+C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.Application\bin\Debug\netcoreapp3.1\eShopSolution.ViewModel.pdb

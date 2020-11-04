@@ -14,6 +14,10 @@ namespace eShopSolution.Application.Common
         public FileStorageService(IWebHostEnvironment webHostEnvironment)
         {
             _userContentFolder = Path.Combine(webHostEnvironment.WebRootPath, USER_CONTENT_FOLDER_NAME);
+            if(!Directory.Exists(_userContentFolder))
+            {
+                Directory.CreateDirectory(_userContentFolder);
+            }
         }
 
         public async Task DeleteFileAsync(string fileName)

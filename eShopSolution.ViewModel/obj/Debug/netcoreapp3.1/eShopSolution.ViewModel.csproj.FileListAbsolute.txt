@@ -3,3 +3,7 @@ C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.ViewModel\bin\Debug\netco
 C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.ViewModel\obj\Debug\netcoreapp3.1\eShopSolution.ViewModel.csprojAssemblyReference.cache
 C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.ViewModel\obj\Debug\netcoreapp3.1\eShopSolution.ViewModel.AssemblyInfoInputs.cache
 C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.ViewModel\obj\Debug\netcoreapp3.1\eShopSolution.ViewModel.AssemblyInfo.cs
+C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.ViewModel\bin\Debug\netcoreapp3.1\eShopSolution.ViewModel.pdb
+C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.ViewModel\obj\Debug\netcoreapp3.1\eShopSolution.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.ViewModel\obj\Debug\netcoreapp3.1\eShopSolution.ViewModel.dll
+C:\Users\hieud\HocLapTrinh\eShopSolution\eShopSolution.ViewModel\obj\Debug\netcoreapp3.1\eShopSolution.ViewModel.pdb
